@@ -14,10 +14,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('imagenes/fondo1.jpg'); /* Ruta a tu imagen de cielo */
+    background-color: cadetblue;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: #ffffff;
     
     
 }
@@ -28,12 +28,13 @@ header, h5 {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
     font-size: 30px;
+     border-radius: 50px;
 }
 h3{
   font-size: 18px;
   text-align: center ;
    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
-  
+   border-radius: 50px;
 }
 h2{
    font-size: 20px;
@@ -42,7 +43,7 @@ h2{
 h1{
     font-size: 15px;
   text-align: center;
-  color: azure;
+  color: #ffffff;
 }
 /* Estilos de los títulos */
 h1, h2 {
@@ -83,16 +84,16 @@ p{
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 60px;
+    padding: 60px;
 }
 
 .item {
     background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -102,7 +103,7 @@ img {
 }
 
 .container {
-    width: 65%;
+    width: 55%;
     margin: 0 auto;
     padding: 20px;
 }
