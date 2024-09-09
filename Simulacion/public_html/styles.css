@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 8 sept 2024, 13:44:12
+    Author     : User
+*/
+
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagenes/fondo1.jpg'); /* Ruta a tu imagen de cielo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    
+    
+}
+
+/* Estilos del header */
+header, h5 {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
+    font-size: 30px;
+}
+h3{
+  font-size: 18px;
+  text-align: center ;
+   background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
+  
+}
+h2{
+   font-size: 20px;
+  text-align: center;
+}
+h1{
+    font-size: 15px;
+  text-align: center;
+  color: azure;
+}
+/* Estilos de los títulos */
+h1, h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+/*ESTILOS para la informacion*/
+p{
+    font-size: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+/* Animación de entrada para los elementos de la lista */
+.examples li {
+    animation: slideIn 1s ease-in-out alternate;
+}
+
+/* Keyframes para las animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/*Galeria de imagenes*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para mayor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.container.text {
+    width: 60%;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    margin: 20px 0;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
